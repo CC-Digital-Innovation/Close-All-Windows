@@ -18,6 +18,17 @@ the windows open on the machine.
 - PowerShell >= v3
 
 ## Usage
+- Ideally, this script should be run using the Task Scheduler program. The
+  setup for the task should be as follows:
+    - General > Check "Run only when user is logged on" and "Run with highest
+      privileges"
+    - Trigger > Make your own trigger
+    - Actions > New... > Action: "Start a program", Program/script:
+      "Powershell.exe", Add arguments: "-ExecutionPolicy Bypass
+      PATH_TO_SCRIPT\Close-All-Windows.ps1" > OK
+    - Conditions > Check "Wake the computer to run this task"
+    
+
 - Simply run the script using a PowerShell terminal:
   `./Close-All-Windows.ps1`
 
