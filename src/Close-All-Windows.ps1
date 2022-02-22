@@ -1,3 +1,22 @@
+#Requires -Version 3
+
+
+<#
+.Synopsis
+  Closes all processes that have windows open or minimized on the desktop with a 5-minute pop-up
+  warning.
+.Description
+  This script will generate a 5-minute warning pop-up that prompts the user to either cancel the
+  window closing process or to begin the process immediately. If the prompt goes unanswered after
+  5 minutes the script will stop all processes with open or minimized windows on the desktop. It
+  ends by closing the process running this script including the pop-up.
+.Notes
+  Author:         Anthony Farina
+  Creation Date:  06/10/2021
+  Version:        1.0.3
+#>
+
+
 # Declare global variables.
 $PROMPT_MESSAGE = @'
 All windows will be closed in 5 minutes.
