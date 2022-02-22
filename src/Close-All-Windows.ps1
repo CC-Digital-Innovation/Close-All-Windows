@@ -6,13 +6,13 @@ Click "Cancel" to keep all the windows open.
 '@
 
 
-# Declare global functions.
+# This function will close all active windows on the desktop before closing itself.
 function Close-AllWindows {
     # Close all active windows. Close all windows that may ask to save work before closing.
     Get-Process | Where-Object { $_.MainWindowTitle -ne "" -and $_.ProcessName -ne "powershell" } | Stop-Process
     Get-Process | Where-Object { $_.MainWindowTitle -ne "" -and $_.ProcessName -ne "powershell" } | Stop-Process
 
-    # Close all active PowerShell windows.
+    # Close all active PowerShell windows (including this process).
     (New-Object -ComObject Shell.Application).Windows() | ForEach-Object { $_.Quit() }
 }
 

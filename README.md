@@ -1,7 +1,7 @@
 # Close-All-Windows
 
 ## Summary
-Closes all active windows running. The script gives the user a 5 minute warning
+Closes all active windows running. The script gives the user a 5-minute warning
 before it runs. The user can keep all the windows open by selecting "Cancel" in
 the popup window.
 
@@ -33,15 +33,15 @@ the windows open on the machine.
   `./Close-All-Windows.ps1`
 
 ## Compatibility
-This is only tested on Windows and most likely will only work on Windows. It
-should be possible to support PowerShell Core on Linux with only minor
+This has only been tested on Windows and most likely will only work on Windows. 
+It should be possible to support PowerShell Core on Linux with only minor
 adjustments so leave a feature request if there is any interest in that.
 
 ## Disclaimer
 The code provided in this project is an open source example and should not
 be treated as an officially supported product. Use at your own risk. If you
 encounter any problems, please log an
-[issue](https://github.com/CC-Digital-Innovation/RecoverPoint-Replication/issues).
+[issue](https://github.com/CC-Digital-Innovation/Close-All-Windows/issues).
 
 ## Contributing
 1. Fork it!
@@ -51,7 +51,13 @@ encounter any problems, please log an
 5. Submit a pull request ツ
 
 ## History
--  version 1.0.0 - 2021/06/10
+- version 1.0.2 - 2022/02/22
+    - Updated README.md with correct issue tracking link
+    - Removed license from README.md
+    - Added / edited comments
+- version 1.0.1 - 2021/06/11
+    - Updated README.md to explain Task Scheduler setup
+- version 1.0.0 - 2021/06/10
     - Initial release
 
 ## Credits
